@@ -80,16 +80,21 @@ footer {
 
 // media queries
 
-@media (max-width: 768px) {
+@media(max-width: 768px){
   footer .ul1 {
-    list-style: none;
-    padding-top: 2rem;
+      list-style: none;
+      padding-top: 2rem;
+      .social-icons{
+          display: flex;
+          flex-direction: row;
+      }
   }
 }
 
-@media (max-width: 450px) {
+
+@media(max-width: 450px){
   footer .ul1 {
-    list-style: none;
-    padding-top: 0rem;
+      list-style: none;
+      padding-top: 0rem;
   }
 }
