@@ -230,6 +230,15 @@ footer .bas a {
     list-style: none;
     padding-top: 2rem;
   }
+  footer .ul1 .social-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 @media (max-width: 450px) {
@@ -2931,6 +2940,15 @@ footer .bas a {
   footer .ul1 {
     list-style: none;
     padding-top: 2rem;
+  }
+  footer .ul1 .social-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
