@@ -126,9 +126,10 @@ body {
 
 /*CUSTOMISATION FOOTER*/
 footer {
-  margin: 10rem;
+  margin-top: 10rem;
   background-color: grey;
-  padding: 50px;
+  height: 40vh;
+  padding-top: 50px;
 }
 
 footer img {
@@ -228,15 +229,6 @@ footer .bas a {
   footer .ul1 {
     list-style: none;
     padding-top: 2rem;
-  }
-  footer .ul1 .social-icons {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
   }
 }
 
@@ -2836,9 +2828,10 @@ section .gridPrice .gridElement .person {
 
 /*CUSTOMISATION FOOTER*/
 footer {
-  margin: 10rem;
+  margin-top: 10rem;
   background-color: grey;
-  padding: 50px;
+  height: 40vh;
+  padding-top: 50px;
 }
 
 footer img {
@@ -2938,15 +2931,6 @@ footer .bas a {
   footer .ul1 {
     list-style: none;
     padding-top: 2rem;
-  }
-  footer .ul1 .social-icons {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
   }
 }
 
