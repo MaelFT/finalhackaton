@@ -1,0 +1,173 @@
+.scheduleBody {
+  background: $black;
+  .scheduleHeader {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      color: $white;
+      font-weight: 300;
+    }
+    .nextDay {
+      // Positionnement
+      width: 80%;
+      margin: 80px auto 50px;
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px solid $white;
+      border-bottom: 1px solid $white;
+
+      p {
+        color: $grey;
+        margin: 10px 0;
+        line-height: 30px;
+        font-weight: 300;
+      }
+
+      input[type="button"] {
+        // Paramètre du bouton d'accès au prochain jour
+        color: $white;
+        background: $pink;
+        border-radius: 10px;
+        padding: 10px 20px;
+        margin: 10px 0;
+        transition: 0.5s;
+
+        &:hover {
+          background: #ac3392;
+          cursor: pointer;
+        }
+      }
+
+      div {
+        display: flex;
+      }
+
+      section {
+        // Paramètre des boutons responsive
+        display: none;
+        background: $pink;
+        padding: 5px;
+        border-radius: 10px;
+        margin: 5px;
+      }
+    }
+  }
+
+  .schedule {
+    // Positionnement
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+    align-items: center;
+    border-bottom: 1px solid $white;
+
+    p {
+      color: $grey;
+      font-weight: 300;
+    }
+
+    div {
+      display: flex;
+      justify-content: end;
+      img {
+        display: none;
+      }
+      input[type="button"] {
+        // Paramètre du bouton de réservation
+        width: 150px;
+        color: $black;
+        background: $white;
+        border-radius: 10px;
+        padding: 10px 20px;
+        margin: 5px 0;
+        border: 1px solid transparent;
+        transition: 0.5s;
+
+        &:hover {
+          cursor: pointer;
+          background: $black;
+          color: $white;
+          border: 1px solid $white;
+        }
+      }
+    }
+  }
+
+  .question {
+    // Positionnement
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      color: $white;
+      text-align: center;
+    }
+
+    input[type="button"] {
+      // Paramètre du bouton de contact
+      color: $black;
+      background: $white;
+      border-radius: 10px;
+      padding: 20px 40px;
+      margin: 50px 0;
+      transition: 0.5s;
+
+      &:hover {
+        border: 1px solid $white;
+        background: $black;
+        color: $white;
+      }
+    }
+  }
+}
+
+// RESPONSIVE
+
+@media (max-width: 800px) {
+  .scheduleBody {
+    .scheduleHeader {
+      .nextDay {
+        width: 90%;
+        border-top: 0px transparent;
+        border-bottom: 0px transparent;
+
+        section {
+          display: flex;
+        }
+
+        input[type="button"] {
+          display: none;
+        }
+      }
+    }
+    .schedule {
+      width: 90%;
+      p {
+        font-size: 0.8rem;
+      }
+      div {
+        img {
+          display: flex;
+        }
+        input[type="button"] {
+          display: none;
+        }
+      }
+      &:first-child {
+        border-top: 1px solid $white;
+      }
+    }
+    .question {
+      input[type="button"] {
+        padding: 30px 60px;
+      }
+    }
+  }
+}

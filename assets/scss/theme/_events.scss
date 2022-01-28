@@ -1,0 +1,156 @@
+.eventBody {
+  background: $black;
+
+  h1 {
+    font-size: 3rem !important;
+  }
+
+  p {
+    color: $grey !important;
+    font-size: 2rem !important;
+  }
+
+  .navBar {
+    ul {
+      background: transparent;
+    }
+  }
+
+  .events {
+    background: #000;
+    overflow: hidden;
+
+    //Ajout de l'image du header
+
+    .eventsHeader {
+      background: url(../img/HEADEREVENEMENTS.png) center/cover;
+      height: 100vh;
+      width: 100%;
+    }
+
+    //création de la boîte
+    .eventsContainer {
+      padding-top: 570px;
+      margin-left: 30px;
+      color: rgb(255, 255, 255);
+      width: 50%;
+      font-family: $font1, sans-serif;
+
+      //Ajustement pour la version mobile
+
+      @media screen and (max-width: 600px) {
+        width: 90%;
+      }
+    }
+
+    //Style du titre du header
+
+    .eventsTitle {
+      padding-bottom: 10px;
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      font-family: $font1;
+    }
+
+    .padBot {
+      padding-bottom: 10px;
+    }
+
+    //Alignement des items dans la boîte
+    .titleContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      color: white;
+      font-family: $font1;
+      padding-bottom: 10px;
+      margin-top: 20px;
+      h2 {
+        text-align: center;
+      }
+    }
+
+    .titleDate {
+      font-size: 1.2rem;
+      font-family: $font1;
+    }
+
+    .eventImage {
+      background: url(../img/EVENEMENT-1.png) center/cover;
+      height: 70vh;
+      width: 70%;
+      margin: 0 auto 30px auto;
+      border-radius: 20px;
+
+      @media screen and (max-width: 600px) {
+        width: 80%;
+        height: 50vh;
+      }
+    }
+
+    .eventsText {
+      color: $grey;
+      font-family: "Poppins", sans-serif;
+      margin: 0 auto;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 70%;
+
+      p {
+        padding-bottom: 15px;
+      }
+    }
+
+    //Réglage des boutons
+
+    .eventButton {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+      margin-bottom: 120px;
+
+      a {
+        .eButton {
+          padding: 15px;
+          border: 1px black solid;
+          color: $black;
+          background: white;
+          width: 100%;
+          border-radius: 10px;
+          transition: 0.5s;
+
+          &:hover {
+            background: $black;
+            color: $white;
+            border: 1px solid $white;
+          }
+        }
+
+        @media screen and (max-width: 400px) {
+          padding: 25px;
+        }
+      }
+    }
+
+    //Réglage de la deuxième image
+
+    .eventImageTwo {
+      background: url(../img/EVENEMENT-2.png) center/cover;
+      height: 70vh;
+      width: 70%;
+      margin: 0 auto 30px auto;
+      border-radius: 20px;
+
+      @media screen and (max-width: 600px) {
+        width: 80%;
+        height: 50vh;
+        border-radius: 30px;
+      }
+    }
+  }
+}
