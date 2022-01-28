@@ -152,7 +152,10 @@
   *,
   body {
     padding: 0rem;
-
+    .contactBody #contact .marg {
+      margin: 2rem 4rem;
+      padding: 4rem 1rem;
+    }
     #joinus .join {
       width: 90%;
       padding: 75px;
